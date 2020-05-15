@@ -52,5 +52,6 @@ if __name__=="__main__":
     print(metrics.roc_auc_score(yvalid, preds))
 
     # now dump results
-    joblib.dump(label_encoders, f"./models/{MODEL}_label_encoders.pkl")
+    joblib.dump(label_encoders, f"./models/{MODEL}_{FOLD}_label_encoders.pkl")
     joblib.dump(clf, f"./models/{MODEL}_{FOLD}.pkl")
+    joblib.dump(train_df.columns , f"./models/{MODEL}_{FOLD}_columns.pkl")

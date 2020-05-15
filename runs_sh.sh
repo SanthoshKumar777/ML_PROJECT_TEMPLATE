@@ -3,10 +3,10 @@ export TEST_DATA=input/test.csv
 
 export MODEL=$1
 
-export FOLD=1
-python ./src/train.py
-#FOLD=1 python -m src.train
-#FOLD=2 python -m src.train
-#FOLD=3 python -m src.train
-#FOLD=4 python -m src.train
-#python -m src.predict
+#FOLD=0 python ./src/train.py
+#FOLD=1 python ./src/train.py
+#FOLD=2 python ./src/train.py
+#FOLD=3 python ./src/train.py
+#FOLD=4 python ./src/train.py
+
+python ./src/predict.py
